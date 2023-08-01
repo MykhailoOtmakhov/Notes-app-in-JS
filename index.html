@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notes App in JS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Notes App</h1>
+    <div>
+      <table class="table">
+        <caption>Active notes</caption>
+        <thead class="table-header">
+          <tr>
+            <th>Name</th>
+            <th>Created / Edited</th>
+            <th>Category</th>
+            <th>Content</th>
+            <th>Dates</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="notes-list">
+        </tbody>
+      </table>
+      <button class="create-note-btn">Create note</button>
+    </div>
+
+    <div>
+      <table class="table">
+        <caption>Archive notes</caption>
+        <thead class="table-header">
+          <tr>
+            <th>Name</th>
+            <th>Created</th>
+            <th>Category</th>
+            <th>Content</th>
+            <th>Dates</th>
+            <th>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="archive-notes-list">
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <table class="table">
+        <caption>Summary</caption>
+        <thead class="table-header">
+          <tr>
+            <th>Note Category</th>
+            <th>Active</th>
+            <th>Archive</th>
+          </tr>
+        </thead>
+        <tbody class="summary-notes-list">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="popup-backdrop">
+    <div class="popup">
+      <div class="content">
+        <div class="row">
+          <label>Name</label>
+          <input class="popup-input" type="text" id="note-name">
+        </div>
+        <div class="row">
+          <label>Content</label>
+          <input class="popup-input" type="text" id="note-content">
+        </div>
+        <div class="row">
+          <label>Category</label>
+          <select class="popup-input" name="category" id="note-category">
+            <option value="Task">Task</option>
+            <option value="Random Thought">Random Thought</option>
+            <option value="Idea">Idea</option>
+          </select>
+        </div>
+        <button class="add-note-btn"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+  <script type="module" src="script.js"></script>
+  <script type="text/JavaScript" src=" https://MomentJS.com/downloads/moment.js"></script>
+</body>
+</html>
