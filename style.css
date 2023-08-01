@@ -63,7 +63,7 @@ td {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(/lnr-download.svg);
+  background-image: url(./images/lnr-download.svg);
   cursor: pointer;
   transform: translate(-50%, -50%);}
 
@@ -72,7 +72,7 @@ td {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(/lnr-trash.svg);
+  background-image: url(./images/lnr-trash.svg);
   cursor: pointer;
   transform: translate(-50%, -50%);
 }
@@ -82,7 +82,7 @@ td {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(/lnr-download.svg);
+  background-image: url(./images/lnr-download.svg);
   cursor: pointer;
   transform: translate(-50%, -50%);
 }
@@ -92,7 +92,7 @@ td {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(/lnr-upload.svg);
+  background-image: url(./images/lnr-upload.svg);
   cursor: pointer;
   transform: translate(-50%, -50%);  
 }
@@ -102,7 +102,7 @@ td {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(/lnr-pencil.svg);
+  background-image: url(./images/lnr-pencil.svg);
   cursor: pointer;
   transform: translate(-50%, -50%);
 }
@@ -112,7 +112,7 @@ td {
   position: absolute;
   width: 40px;
   height: 40px;
-  background-image: url(/lnr-checkmark-circle.svg);
+  background-image: url(./images/lnr-checkmark-circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
