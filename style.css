@@ -20,8 +20,6 @@ thead{
 th {
   padding: 5px;
   text-align: left;
-  /* border-radius: 10px; */
-
 }
 
 td {
@@ -38,9 +36,7 @@ td {
 }
 
 .table {
-  /* table-layout: fixed; */
   width: 100%;
-  /* border-collapse: collapse; */
   border-spacing: 0 5px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -49,7 +45,6 @@ td {
 .table-header {
   background:grey;
   color: white;
-  /* border-radius: 10px; */
 }
 
 .archive-note-button,
@@ -62,7 +57,6 @@ td {
   border: none;
   background-color: inherit;
   margin-right: 5px;
-  /* opacity: 0; */
 }
 
 .archive-note-button::before {
@@ -114,8 +108,24 @@ td {
   transform: translate(-50%, -50%);
 }
 
+.add-note-btn::before {
+  content: ' ';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url(/lnr-checkmark-circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
 
-
+.add-note-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: inherit;
+}
 
 .popup-backdrop {
   position: fixed;
@@ -126,6 +136,7 @@ td {
   width: 100%;
   background: rgba(0,0,0,0.4);
 }
+
 .popup-backdrop .popup{
   position: absolute;
   top: 50%;
@@ -136,24 +147,34 @@ td {
   justify-content: center;
   transform: translate(-50%, -50%);
 }
+
 .popup-backdrop, .popup{
   opacity: 0;
   pointer-events: none;
   transition: all 0.25s ease;
 }
+
 .popup-backdrop.show, .popup-backdrop.show .popup{
   opacity: 1;
   pointer-events: auto;
 }
+
 .popup-backdrop.show .popup{
   transform: translate(-50%, -50%) scale(1);
 }
+
 .popup .content{
   background: #fff;
   padding: 20px;
-  /* text-align: center; */
+  width: 100%;
+  text-align: center;
 }
 
 .row{
   margin-bottom: 10px;
 }
+
+.popup-input{
+  width: 100%;
+}
+

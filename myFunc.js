@@ -1,4 +1,7 @@
-// import { v4 as uuidv4 } from "uuid";
-// console.log('uuidv4 ', uuidv4);
+function findDatesInString(str) {
+  const regex = /(\d{1,2})\/(\d{1,2})\/(\d{4})/g;
+  const matches = str.match(regex);
+  return matches ? matches : [];
+}
 
-// export default uuidv4();
+export  { findDatesInString }
